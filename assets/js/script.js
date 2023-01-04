@@ -28,7 +28,7 @@
     const currentWindowHeight = window.innerHeight;
     const elCurrentHeight = statisticsEl.offsetHeight;
     const targetScrollPosition =
-      elScrollPosition - currentWindowHeight + elCurrentHeight;
+      elScrollPosition - currentWindowHeight + elCurrentHeight / 2;
     if (currentScrollPosition >= targetScrollPosition) {
       isCounterStarted = true;
       setCounters();
